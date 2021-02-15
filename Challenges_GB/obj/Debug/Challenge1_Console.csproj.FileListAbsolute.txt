@@ -1,0 +1,10 @@
+C:\Users\mboon\source\repos\Challenges_GB\Challenges_GB\obj\Debug\Challenge1_Console.csprojAssemblyReference.cache
+C:\Users\mboon\source\repos\Challenges_GB\Challenges_GB\obj\Debug\Challenge1_Console.csproj.CoreCompileInputs.cache
+C:\Users\mboon\source\repos\Challenges_GB\Challenges_GB\bin\Debug\Challenges_GB.exe.config
+C:\Users\mboon\source\repos\Challenges_GB\Challenges_GB\bin\Debug\Challenges_GB.exe
+C:\Users\mboon\source\repos\Challenges_GB\Challenges_GB\bin\Debug\Challenges_GB.pdb
+C:\Users\mboon\source\repos\Challenges_GB\Challenges_GB\bin\Debug\Challenge1_Repo.dll
+C:\Users\mboon\source\repos\Challenges_GB\Challenges_GB\bin\Debug\Challenge1_Repo.pdb
+C:\Users\mboon\source\repos\Challenges_GB\Challenges_GB\obj\Debug\Challenge1_Console.csproj.CopyComplete
+C:\Users\mboon\source\repos\Challenges_GB\Challenges_GB\obj\Debug\Challenges_GB.exe
+C:\Users\mboon\source\repos\Challenges_GB\Challenges_GB\obj\Debug\Challenges_GB.pdb
