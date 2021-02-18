@@ -1,0 +1,10 @@
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Console\bin\Debug\Challenge3_Console.exe.config
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Console\bin\Debug\Challenge3_Console.exe
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Console\bin\Debug\Challenge3_Console.pdb
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Console\bin\Debug\Challenge3_Repo.dll
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Console\bin\Debug\Challenge3_Repo.pdb
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Console\obj\Debug\Challenge3_Console.csprojAssemblyReference.cache
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Console\obj\Debug\Challenge3_Console.csproj.CoreCompileInputs.cache
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Console\obj\Debug\Challenge3_Console.csproj.CopyComplete
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Console\obj\Debug\Challenge3_Console.exe
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Console\obj\Debug\Challenge3_Console.pdb

@@ -17,6 +17,7 @@ namespace Challenge3_Console
         public void Run()
         {
             Console.ReadKey();
+            RunMenu();
         }
         private void RunMenu()
         {

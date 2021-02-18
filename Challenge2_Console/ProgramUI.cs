@@ -9,13 +9,14 @@ namespace Challenge2_Console
 {
     public class ProgramUI
     {
-        private readonly List<ClaimsClass> _reports = new List<ClaimsClass>();
+        // private readonly List<ClaimsClass> _reports = new List<ClaimsClass>();
 
         private readonly ClaimsClass_Repo _repo = new ClaimsClass_Repo();
 
         public void Run()
         {
             Console.ReadKey();
+            RunMenu();
         }
         public void RunMenu()
         {
@@ -23,11 +24,11 @@ namespace Challenge2_Console
             while (continueToRun)
             {
                 Console.Clear();
-                Console.WriteLine("Enter the number of the option you would like to do today." +
-                    "1. Show the Queue." +
-                    "2. Take care of the next claim." +
-                    "3. Add a new Claim to the queue." +
-                    "4. Exit the program.");
+                Console.WriteLine("Enter the number of the option you would like to do today.\n" +
+                    "1. Show the Queue.\n" +
+                    "2. Take care of the next claim.\n" +
+                    "3. Add a new Claim to the queue.\n" +
+                    "4. Exit the program.\n");
 
                 string userInput = Console.ReadLine();
 
@@ -91,7 +92,7 @@ namespace Challenge2_Console
                     break;
                 case "2":
                     //MoveDownTheQueue
-                    RunMenu();
+                    ShowTheQueue();
                     break;
                 default:
                     Console.WriteLine("Please select a valid number between 1-3.");
