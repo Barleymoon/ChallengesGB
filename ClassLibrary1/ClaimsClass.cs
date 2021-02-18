@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    public enum ClaimType { Car = 1, Home, Theft }
+     public enum ClaimType { Car, Home, Theft }
     public class ClaimsClass
     {
         public int ClaimId { get; set; }
@@ -14,12 +14,13 @@ namespace ClassLibrary1
         public string Description { get; set; }
         public decimal ClaimAmount { get; set; }
         public DateTime DateOfIncident { get; set; }
+        public List<ClaimsClass> ClaimsList { get; set; }
         public DateTimeOffset DateOfClaim { get; set; }
         // public bool IsValid { get; }
-        public ClaimsClass(int claimId, ClaimType claimType, string description, decimal claimAmount, DateTime dateOfClaim, DateTime dateOfIncident)
+        public ClaimsClass(ClaimType claimType, string description, decimal claimAmount, DateTime dateOfClaim, DateTime dateOfIncident)
         {
-            Random random = new Random();
-            ClaimId = random.Next(0,999999);
+           // Random random = new Random();
+           // ClaimId = random.Next(0,999999);
             ClaimType = claimType;
             Description = description;
             ClaimAmount = claimAmount;
@@ -28,9 +29,14 @@ namespace ClassLibrary1
             //IsValid = isValid;
             // DateOfIncident = dateOfIncident;
         }
+
+        public ClaimsClass()
+        {
+        }
+
         public bool IsValid()
         {
-            if (DateOfIncident <= DateOfClaim)
+            if (DateOfClaim >= DateOfIncident)
             {
                 return true;
             }

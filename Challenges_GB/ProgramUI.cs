@@ -14,6 +14,7 @@ namespace Challenges_GB
         {
             Console.WriteLine("Welcome to Komodo Cafe");
             Console.ReadKey();
+            RunMenu();
         }
         private void RunMenu()
         {
@@ -21,11 +22,11 @@ namespace Challenges_GB
             while (continueToDisplay)
             {
                 Console.Clear();
-                Console.WriteLine("Enter the number of the option you wish to choose." +
-                    "1. Show All Menu Items." +
-                    "2. Create a New Menu Item" +
-                    "3. Delete a Menu Item from Inventory." +
-                    "4. Exit.");
+                Console.WriteLine("Enter the number of the option you wish to choose.\n " +
+                    "1. Show All Menu Items.\n" +
+                    "2. Create a New Menu Item\n" +
+                    "3. Delete a Menu Item from Inventory.\n" +
+                    "4. Exit.\n");
 
                 string userInput = Console.ReadLine();
 
@@ -35,7 +36,7 @@ namespace Challenges_GB
                         ShowAllMenuItems();
                         break;
                     case "2":
-                        // CreateNewItem();
+                        MakeNewItem();
                         break;
                     case "3":
                         DeleteExistingItemFromList();
@@ -51,7 +52,6 @@ namespace Challenges_GB
                 }
             }
         }
-
         private void ShowAllMenuItems()
         {
             Console.Clear();
@@ -64,14 +64,37 @@ namespace Challenges_GB
             }
             Console.ReadKey();
         }
+        private void MakeNewItem()
+        {
+            Console.Clear();
+
+            MenuItems items = new MenuItems();
+            
+            Console.WriteLine("Please enter an ID number for this item: ");
+            items.ID = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter a Name: ");
+            items.Name = Console.ReadLine();
+
+            Console.WriteLine("Please enter a description for the item: ");
+            items.Description = Console.ReadLine();
+
+            Console.WriteLine("Please set the price for this item: ");
+            items.Price = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter the ingredients for this item: ");
+            items.Ingredients = new List<string> { };
+
+            _repo.AddItemsToInventory(items);
+        }
 
         private void DisplayItems(MenuItems items)
         {
-            Console.WriteLine($"Name: {items.Name}" +
-                // $"ID: {items.ID}" +
-                $"Description: {items.Description}" +
-                $"Price: {items.Price}" +
-                $"Ingredients: {items.Ingredients}");
+            Console.WriteLine($"Name: {items.Name}\n" +
+                $"ID: {items.ID}\n" +
+                $"Description: {items.Description}\n" +
+                $"Price: {items.Price}\n" +
+                $"Ingredients: {items.Ingredients}\n");
         }
 
         private void DeleteExistingItemFromList()

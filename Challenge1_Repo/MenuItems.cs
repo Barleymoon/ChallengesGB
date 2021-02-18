@@ -8,14 +8,14 @@ namespace Challenge1_Repo
 {
     public class MenuItems
     {
-        //public int ID { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public int Price { get; set;  }
         public List<string> Ingredients { get; set; }
-        public MenuItems(string name, string description, int price, List<string> ingredients)
+        public MenuItems(int iD, string name, string description, int price, List<string> ingredients)
         {
-            // ID = iD;
+            ID = iD;
             Name = name;
             Description = description;
             Price = price;

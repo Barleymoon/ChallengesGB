@@ -15,7 +15,6 @@ namespace Challenge2_Tests
             _repo = new ClaimsClass_Repo();
 
             ClaimsClass One = new ClaimsClass(
-                1,
                 ClaimType.Car,
                 "Accident on 465.",
                 400,
@@ -23,7 +22,6 @@ namespace Challenge2_Tests
                 new DateTime(10 / 27 / 18)
                 );
             ClaimsClass Two = new ClaimsClass(
-                2,
                 ClaimType.Home,
                 "Tree fell through garage.",
                 4000,
@@ -31,33 +29,30 @@ namespace Challenge2_Tests
                 new DateTime(04 / 12 / 18)
                 );
             ClaimsClass Three = new ClaimsClass(
-                3,
                 ClaimType.Theft,
                 "Stolen hair dryer.",
                 25,
                 new DateTime(04 / 27 / 18),
                 new DateTime(06 / 01 / 18)
                 );
-            _repo.AddContentToClaims(One);
-            _repo.AddContentToClaims(Two);
-            _repo.AddContentToClaims(Three);
+            _repo.AddNewContentToClaims(One);
+            _repo.AddNewContentToClaims(Two);
+            _repo.AddNewContentToClaims(Three);
 
             _reports = new ClaimsClass(
-                4,
                 ClaimType.Home,
                 "House caught on fire during Summer.",
                 25000,
                 new DateTime(05 / 21 / 18),
                 new DateTime(06 / 12 / 18)
                 );
-            _repo.AddContentToClaims(_reports);
+            _repo.AddNewContentToClaims(_reports);
         }
 
         [TestMethod]
         public void AddClaimsTest()
         {
             ClaimsClass _reports = new ClaimsClass(
-                1,
                 ClaimType.Car,
                 "Car accident on 464.",
                 400,
@@ -65,7 +60,7 @@ namespace Challenge2_Tests
                 new DateTime(04 / 27 / 18)
                 );
 
-            bool wasAdded = _repo.AddContentToClaims(_reports);
+            bool wasAdded = _repo.AddNewContentToClaims(_reports);
 
             Console.WriteLine(_repo.Count);
 

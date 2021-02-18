@@ -18,14 +18,14 @@ namespace Challenge1_Tests
         {
             _repo = new MenuItems_Repo();
             thePorkChop = new MenuItems(
-               // 1,
+                 1,
                 "The ProkChop",
                 "Amazingly prepaired Porkchop.",
                 15,
                 new List<string> { "", "", }
                 );
             MenuItems theSalad = new MenuItems(
-                // 2,
+                2,
                 "Salad",
                 "Amazing Salad with fresh greens and lots of variety.",
                 16,
@@ -39,7 +39,7 @@ namespace Challenge1_Tests
         public void AddToInventoryTest()
         {
             MenuItems theHouseBurger = new MenuItems(
-                //3,
+                3,
                 "The House Burger",
                 "Great 8 ounce patty topped with Pepperjack cheese and veggies.",
                 15,
@@ -57,28 +57,11 @@ namespace Challenge1_Tests
         }
 
         [TestMethod]
-        public void AddItemsTest()
+        public void FindItemByName()
         {
-            Console.Clear();
+            MenuItems searchResult = _repo.GetItemsByName("the Pork Chop");
 
-            MenuItems items = new MenuItems();
-
-            // Console.WriteLine("Please enter an ID number for this Item.");
-            // items.ID = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Please enter the Item's Name: ");
-            items.Name = Console.ReadLine();
-
-            Console.WriteLine("Please enter a description for the bnew Item: ");
-            items.Description = Console.ReadLine();
-
-            Console.WriteLine("Please set a price for this Item: ");
-            items.Price = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Please list the ingredients of this Item: ");
-            string ingredients = Console.ReadLine();
-
-            _repo.AddItemsToInventory(items);
+            Assert.AreEqual(searchResult, thePorkChop);
         }
 
         [TestMethod]

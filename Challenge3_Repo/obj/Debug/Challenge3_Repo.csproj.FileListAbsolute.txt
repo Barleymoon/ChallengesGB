@@ -1,0 +1,6 @@
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Repo\bin\Debug\Challenge3_Repo.dll
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Repo\bin\Debug\Challenge3_Repo.pdb
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Repo\obj\Debug\Challenge3_Repo.csprojAssemblyReference.cache
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Repo\obj\Debug\Challenge3_Repo.csproj.CoreCompileInputs.cache
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Repo\obj\Debug\Challenge3_Repo.dll
+C:\Users\mboon\source\repos\Challenges_GB\Challenge3_Repo\obj\Debug\Challenge3_Repo.pdb

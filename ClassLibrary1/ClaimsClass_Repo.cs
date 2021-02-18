@@ -18,7 +18,7 @@ namespace ClassLibrary1
             }
         }
 
-        public bool AddContentToClaims(ClaimsClass claims)
+        public bool AddNewContentToClaims(ClaimsClass claims)
         {
             int startingCount = _reports.Count;
 
